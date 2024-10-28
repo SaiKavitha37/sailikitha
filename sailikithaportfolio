@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - NEKKALAPU SIVA SATYA SAI LIKHITHA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background: #eef1f6;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: linear-gradient(to right, #4a90e2, #a3c6e8);
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            border-bottom: 5px solid #4a90e2;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 10px 0;
+            letter-spacing: 1.5px;
+        }
+        header p {
+            font-size: 1rem;
+            margin: 5px 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+        }
+        h2 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            color: #4a90e2;
+            position: relative;
+            padding-bottom: 5px;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #4a90e2;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+        }
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .footer {
+            text-align: center;
+            background: #4a90e2;
+            color: white;
+            padding: 15px 0;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        .callout {
+            background: #4a90e2;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>NEKKALAPU SIVA SATYA SAI LIKHITHA</h1>
+    <p>Email: <a href="mailto:sailikhithanekkalapu@gmail.com">sailikhithanekkalapu@gmail.com</a> | Phone: +91 9493537755</p>
+</header>
+
+<div class="container">
+    <div class="callout">Welcome to My Portfolio!</div>
+    
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Shri Vishnu Engineering College for Women</strong><br>B.Tech in Information Technology | Oct 2022 - Present<br><strong>CGPA:</strong> 9.17</li>
+            <li><strong>Sri Chaitanya Junior College</strong><br>Intermediate (MPC) | Oct 2020 - May 2022<br><strong>Score:</strong> 956/1000</li>
+            <li><strong>Baba High School</strong><br>High School | Jun 2019 - May 2020<br><strong>Score:</strong> 593/600</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Skills Summary</h2>
+        <div class="skills-grid">
+            <ul>
+                <li><strong>Programming Languages:</strong> C, C++, Python, Java, SQL</li>
+            </ul>
+            <ul>
+                <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
+            </ul>
+            <ul>
+                <li><strong>Databases:</strong> Oracle, MongoDB, MySQL</li>
+            </ul>
+            <ul>
+                <li><strong>Frameworks & Libraries:</strong> ReactJS, Node.js, Java Springboot</li>
+            </ul>
+            <ul>
+                <li><strong>Cloud Technologies:</strong> Microsoft Azure, AWS (Basic knowledge)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Path Visualizer</strong><br>Technologies Used: React, Dijkstra’s algorithm, A*, BFS<br>A web-based pathfinding visualizer that compares algorithms like Dijkstra, A*, and BFS. Users can interact with the grid to see how algorithms find the shortest path.</li>
+            <li><strong>Donation Site</strong><br>Technologies Used: React, Node.js, Express, Stripe, Cloud Firestore, TailwindCSS<br>Developed a secure donation platform in collaboration with a team. Improved the user experience based on feedback from testers.</li>
+            <li><strong>Calorie Burnt Prediction</strong><br>Technologies Used: Python, scikit-learn, pandas, numpy, joblib, matplotlib<br>Built a machine learning model to predict calories burned. Presented findings to stakeholders.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Achievements and Certifications</h2>
+        <ul>
+            <li>Gold Badge in Problem-Solving on HackerRank</li>
+            <li>Machine Learning - Skilldzire [<a href="#">Certificate Link</a>]</li>
+            <li>Introduction to Data Science - Infosys [<a href="#">Certificate Link</a>]</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Positions of Responsibility</h2>
+        <ul>
+            <li><strong>Innomatics Research Intern - Full Stack Developer</strong><br>Sept 2024 - Present<br>Gained hands-on experience in building and deploying web applications. Collaborated with cross-functional teams to develop robust and scalable applications.</li>
+            <li><strong>GSSOC Contributor</strong><br>2024 - Present<br>Contributed to open-source projects under the GirlScript Summer of Code, collaborating with teams to enhance code quality and add new features.</li>
+            <li><strong>She Codes Foundation Scholar</strong><br>2024 - Present<br>Developed a foundation in web development, collaborating with mentors and team members to complete web-based projects.</li>
+        </ul>
+    </section>
+</div>
+
+<div class="footer">
+    <p>Designed and Developed by NEKKALAPU SIVA SATYA SAI LIKHITHA</p>
+</div>
+
+</body>
+</html>
